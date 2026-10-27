@@ -1,0 +1,161 @@
+{
+  "brief_id": "brief-087",
+  "title": "Family Sports Equipment Checkout \u2014 Millersville Aspire/Hornets/API Gear Bag + Jersey Checkout Board with Hold Before Buy/Replace",
+  "topic": "Family sports equipment checkout",
+  "source": "/workspace/tokenmax/agent-brief-forge/out/brief-087.md + peer-review-087.json + citations-087.json",
+  "peer_review_verdict": "accept_with_revisions_noted",
+  "citations_count": 219,
+  "citations_passed": true,
+  "timezone": "America/New_York",
+  "place": "Millersville, MD",
+  "home": "Millersville, MD",
+  "pairs": [
+    "brief-013",
+    "brief-040"
+  ],
+  "lanes": [
+    "Aspire",
+    "Hornets",
+    "API"
+  ],
+  "constraints": [
+    "Never fabricate LIVE gear inventory without this-session dual_proof; missing proof => EXAMPLE/SYNTHETIC",
+    "Never auto-buy gear / Amazon / charge card; never auto-replace jersey; never auto-text Char/Vic",
+    "Hold default review_private; buy/replace/text_kids never default; Hold timeout never buys",
+    "Cousin brief-040 Gift Board merge_apply=false \u2014 gift buy Apply \u2260 gear buy/replace Apply",
+    "Personal household only \u2014 not KPD; America/New_York; Millersville"
+  ],
+  "buy_hold_destinations": [
+    "review_private",
+    "checkout_in",
+    "checkout_out",
+    "buy",
+    "replace",
+    "text_kids",
+    "defer",
+    "reject"
+  ],
+  "scorecard": {
+    "auto_buy_gear": 0,
+    "fabricate_gear_inventory": 0,
+    "auto_text_kids": 0,
+    "auto_order_amazon": 0,
+    "auto_charge_card": 0,
+    "fabricate_price": 0,
+    "auto_replace_jersey": 0,
+    "fake_live_inventory": 0,
+    "hold_timeout_buy": 0,
+    "auto_share_checkout": 0,
+    "burn_outbound": 0,
+    "timezone": "America/New_York"
+  },
+  "cousins": {
+    "brief_040": {
+      "merge_apply": false,
+      "role": "gift board buy"
+    }
+  },
+  "cousin_brief_040": {
+    "merge_apply": false
+  },
+  "merge_apply": false,
+  "gear_checkout_board": {
+    "schema": "sports-gear-checkout/v1",
+    "tz": "America/New_York",
+    "place": "Millersville, MD",
+    "honesty": "EXAMPLE/SYNTHETIC \u2014 inventory null until dual_proof; never cyan LIVE inventory",
+    "window": {
+      "kind": "Aspire/Hornets/API gear checkout",
+      "status": "EXAMPLE"
+    },
+    "bags": [
+      {
+        "id": "EX-CHAR-ASPIRE",
+        "owner": "Char",
+        "team": "Aspire",
+        "sport": "lacrosse",
+        "items": [
+          "stick (EXAMPLE)",
+          "goggles (EXAMPLE)"
+        ],
+        "status": "EXAMPLE",
+        "proof": null,
+        "live_badge": false,
+        "checkout": "OUT"
+      },
+      {
+        "id": "EX-VIC-HORNETS",
+        "owner": "Vic",
+        "team": "Hornets",
+        "sport": "basketball",
+        "items": [
+          "jersey #12 (EXAMPLE)",
+          "ball (EXAMPLE)"
+        ],
+        "status": "EXAMPLE",
+        "proof": null,
+        "live_badge": false,
+        "checkout": "OUT"
+      },
+      {
+        "id": "EX-SHARED-API",
+        "owner": "shared",
+        "team": "API",
+        "sport": "mixed",
+        "items": [
+          "med kit (EXAMPLE)"
+        ],
+        "status": "EXAMPLE",
+        "proof": null,
+        "live_badge": false,
+        "checkout": "IN"
+      }
+    ],
+    "inventory": {
+      "checked_out": null,
+      "missing": null,
+      "status": "EXAMPLE",
+      "proof": null,
+      "live_badge": false
+    },
+    "buy_hold": {
+      "state": "HOLD",
+      "destination": null,
+      "default": "review_private",
+      "options": [
+        "review_private",
+        "checkout_in",
+        "checkout_out",
+        "buy",
+        "replace",
+        "text_kids",
+        "defer",
+        "reject"
+      ],
+      "auto_buy": null,
+      "auto_charge": null,
+      "auto_order_amazon": null,
+      "digest_sha256": null,
+      "expires_at": null,
+      "cousin_ack": {
+        "brief_040": false
+      }
+    },
+    "replace_hold": {
+      "state": "HOLD",
+      "destination": null,
+      "default": "review_private",
+      "auto_replace": null,
+      "digest_sha256": null,
+      "expires_at": null
+    },
+    "text_kids_hold": {
+      "state": "HOLD",
+      "destination": null,
+      "default": "review_private",
+      "auto_text": null,
+      "digest_sha256": null,
+      "expires_at": null
+    }
+  }
+}

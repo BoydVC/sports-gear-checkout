@@ -1,0 +1,52 @@
+:root {
+  --bg: #0f1419;
+  --panel: #1a2332;
+  --ink: #e8eef7;
+  --muted: #9aadc2;
+  --accent: #3dd6c6;
+  --warn: #f0b429;
+  --lane: #243044;
+  --border: #2e3d52;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; padding: 1.25rem 1.5rem 2rem;
+  font: 15px/1.45 system-ui, -apple-system, Segoe UI, sans-serif;
+  background: var(--bg); color: var(--ink);
+}
+.hero { display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap; margin-bottom: 1.25rem; }
+.eyebrow { color: var(--accent); text-transform: uppercase; letter-spacing: .08em; font-size: .72rem; margin: 0 0 .35rem; }
+h1 { margin: 0; font-size: 1.75rem; }
+.sub { color: var(--muted); margin: .35rem 0 0; }
+.hero-meta { display: flex; gap: .5rem; align-items: flex-start; }
+.pill, .badge {
+  display: inline-block; padding: .25rem .55rem; border-radius: 999px;
+  background: var(--lane); border: 1px solid var(--border); color: var(--muted); font-size: .78rem;
+}
+.badge { color: var(--warn); border-color: #5a4a1a; background: #2a2410; }
+.lanes { display: grid; grid-template-columns: repeat(3, 1fr); gap: .75rem; margin-bottom: 1.25rem; }
+@media (max-width: 720px) { .lanes { grid-template-columns: 1fr; } }
+.lane { background: var(--lane); border: 1px solid var(--border); border-radius: .75rem; padding: .85rem 1rem; }
+.lane h3 { margin: 0 0 .35rem; color: var(--accent); }
+.lane p { margin: 0; color: var(--muted); font-size: .9rem; }
+.panel {
+  background: var(--panel); border: 1px solid var(--border);
+  border-radius: .9rem; padding: 1rem 1.15rem 1.2rem; margin-bottom: 1rem;
+}
+.row { display: flex; justify-content: space-between; gap: .75rem; flex-wrap: wrap; align-items: center; }
+.panel h2 { margin: 0; font-size: 1.15rem; }
+.law { margin: .75rem 0 1rem; padding-left: 1.1rem; color: var(--muted); }
+.law li { margin: .35rem 0; }
+.law strong { color: var(--ink); }
+.board { font-size: .9rem; line-height: 1.55; }
+.muted { color: var(--muted); }
+.bag-row { display: flex; flex-wrap: wrap; gap: .4rem; margin: .5rem 0; }
+.bag-pill {
+  background: #121a24; border: 1px solid var(--border); border-radius: .5rem;
+  padding: .3rem .55rem; font-size: .8rem; color: var(--ink);
+}
+footer {
+  display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap;
+  margin-top: 1.5rem; color: var(--muted); font-size: .8rem;
+}
+code { color: var(--accent); font-size: .88em; }

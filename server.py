@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Sports Gear Checkout — LIVE Millersville Aspire/Hornets/API gear board on 127.0.0.1:4350.
+"""Sports Gear Checkout — LIVE Hometown Aspire/Hornets/API gear board on 127.0.0.1:4350.
 
 brief-087 fold: EXAMPLE/SYNTHETIC inventory until dual_proof; Hold review_private before buy/replace.
 Never auto-buy gear, never fabricate LIVE inventory, never auto-text kids. Not KPD.
@@ -109,7 +109,7 @@ def brief087_payload() -> dict:
         "refused_endpoints_policy": "403",
         "refused_endpoints": list(REFUSED087),
         "timezone": "America/New_York",
-        "place": "Millersville, MD",
+        "place": "Hometown",
         "lanes": list(law.get("lanes") or ["Aspire", "Hornets", "API"]),
         "pairs_brief013": True,
         "pairs_brief040": True,
@@ -168,7 +168,7 @@ def _refuse087(path: str, method: str) -> dict:
             "hold_timeout_buy=0 / burn_outbound=0. "
             "Check the bag. Hold the buy. Inventory LIVE only with proof. "
             "Cousin brief-040 Gift Board merge_apply=false (gift buy ≠ gear buy). "
-            "America/New_York · Millersville. Not KPD."
+            "America/New_York · Hometown. Not KPD."
         ),
     }
 
@@ -209,7 +209,7 @@ class Handler(SimpleHTTPRequestHandler):
                     "app": "sports-gear-checkout",
                     "bind": f"{HOST}:{PORT}",
                     "timezone": "America/New_York",
-                    "place": "Millersville, MD",
+                    "place": "Hometown",
                     "lanes": ["Aspire", "Hornets", "API"],
                     "demo_mode": "SYNTHETIC",
                     "briefs_folded": ["brief-087"],

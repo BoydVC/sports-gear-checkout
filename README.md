@@ -1,12 +1,12 @@
 # Sports Gear Checkout
 
-Local TokenMax invent for **brief-087** — Millersville Aspire / Hornets / API gear bag + jersey checkout board.
+Local TokenMax invent for **brief-087** — Hometown Aspire / Hornets / API gear bag + jersey checkout board.
 
 - Bind: `127.0.0.1:4350`
 - Honesty: EXAMPLE/SYNTHETIC until this-session dual_proof; never cyan LIVE inventory
 - Hold: `review_private` before buy/replace; buy/replace/text_kids never default
 - Cousin Gift Board brief-040: `merge_apply=false` (gift buy ≠ gear buy)
-- Not KPD · no Boyd outbound · no on-demand cloud spend
+- Not KPD · no outbound · no on-demand cloud spend
 
 ## Run
 

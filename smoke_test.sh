@@ -31,7 +31,7 @@ b=json.load(open("'"$ROOT"'/data/brief087.json"))
 board=b["gear_checkout_board"]
 assert board["inventory"]["status"]=="EXAMPLE" and board["inventory"]["proof"] is None
 assert board["inventory"]["checked_out"] is None
-assert b["place"]=="Millersville, MD"
+assert b["place"]=="Hometown"
 assert b["cousins"]["brief_040"]["merge_apply"] is False
 assert b["merge_apply"] is False
 assert set(b["lanes"])=={"Aspire","Hornets","API"}
@@ -59,7 +59,7 @@ assert h.get("ok") is True
 assert "brief-087" in (h.get("briefs_folded") or [])
 assert h.get("demo_mode")=="SYNTHETIC"
 assert h.get("timezone")=="America/New_York"
-assert h.get("place")=="Millersville, MD"
+assert h.get("place")=="Hometown"
 ' && ok "health briefs_folded + SYNTHETIC" || bad "health payload"
 
 code=$(curl -s -o /tmp/sgc-b87.json -w "%{http_code}" "$BASE/api/brief087" || echo 000)

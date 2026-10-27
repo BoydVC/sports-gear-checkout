@@ -1,14 +1,14 @@
 {
   "brief_id": "brief-087",
-  "title": "Family Sports Equipment Checkout \u2014 Millersville Aspire/Hornets/API Gear Bag + Jersey Checkout Board with Hold Before Buy/Replace",
+  "title": "Family Sports Equipment Checkout \u2014 Hometown Aspire/Hornets/API Gear Bag + Jersey Checkout Board with Hold Before Buy/Replace",
   "topic": "Family sports equipment checkout",
   "source": "/workspace/tokenmax/agent-brief-forge/out/brief-087.md + peer-review-087.json + citations-087.json",
   "peer_review_verdict": "accept_with_revisions_noted",
   "citations_count": 219,
   "citations_passed": true,
   "timezone": "America/New_York",
-  "place": "Millersville, MD",
-  "home": "Millersville, MD",
+  "place": "Hometown",
+  "home": "Hometown",
   "pairs": [
     "brief-013",
     "brief-040"
@@ -20,10 +20,10 @@
   ],
   "constraints": [
     "Never fabricate LIVE gear inventory without this-session dual_proof; missing proof => EXAMPLE/SYNTHETIC",
-    "Never auto-buy gear / Amazon / charge card; never auto-replace jersey; never auto-text Char/Vic",
+    "Never auto-buy gear / Amazon / charge card; never auto-replace jersey; never auto-text Kid A/Kid B",
     "Hold default review_private; buy/replace/text_kids never default; Hold timeout never buys",
     "Cousin brief-040 Gift Board merge_apply=false \u2014 gift buy Apply \u2260 gear buy/replace Apply",
-    "Personal household only \u2014 not KPD; America/New_York; Millersville"
+    "Personal household only \u2014 not KPD; America/New_York; Hometown"
   ],
   "buy_hold_destinations": [
     "review_private",
@@ -62,7 +62,7 @@
   "gear_checkout_board": {
     "schema": "sports-gear-checkout/v1",
     "tz": "America/New_York",
-    "place": "Millersville, MD",
+    "place": "Hometown",
     "honesty": "EXAMPLE/SYNTHETIC \u2014 inventory null until dual_proof; never cyan LIVE inventory",
     "window": {
       "kind": "Aspire/Hornets/API gear checkout",
@@ -70,8 +70,8 @@
     },
     "bags": [
       {
-        "id": "EX-CHAR-ASPIRE",
-        "owner": "Char",
+        "id": "EX-KIDA-ASPIRE",
+        "owner": "Kid A",
         "team": "Aspire",
         "sport": "lacrosse",
         "items": [
@@ -84,8 +84,8 @@
         "checkout": "OUT"
       },
       {
-        "id": "EX-VIC-HORNETS",
-        "owner": "Vic",
+        "id": "EX-KIDB-HORNETS",
+        "owner": "Kid B",
         "team": "Hornets",
         "sport": "basketball",
         "items": [
